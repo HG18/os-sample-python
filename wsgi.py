@@ -13,7 +13,7 @@ def exe_cmd(c):
 	return o, e, p_s
 
 def pull_data():
-	cmd='curl -H "Authorization: Bearer 8UoEBUYYqpfizZp-AnJtCFsCtAxSIUO9_xwFfF9A1as" "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-17-5082.html"'
+	cmd="curl -H \"Authorization: Bearer 8UoEBUYYqpfizZp-AnJtCFsCtAxSIUO9_xwFfF9A1as\" \"https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-17-5082.html\""
 
 	(output,err,p_status)=exe_cmd(cmd)
 	if p_status == 0:
